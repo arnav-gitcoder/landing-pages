@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks — It's Not Just Coffee</title>
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="logo" data-aos="fade-right" data-aos-duration="800">
+            <img src="images/logo.png" alt="Starbucks">
+        </div>
+        <div class="links" data-aos="fade-left" data-aos-duration="800">
+            <a href="">Home</a>
+            <a href="">Menu</a>
+            <a href="">Rewards</a>
+            <a href="">Find a Store</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <main class="hero">
+
+        <!-- Left: content -->
+        <div class="content">
+            <p class="eyebrow" data-aos="fade-up" data-aos-delay="100">Est. 1971 · Seattle, WA</p>
+            <h1 data-aos="fade-up" data-aos-delay="200">
+                Not just coffee —
+                <em>an obsession.</em>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="300">
+                Every cup is a ritual. We source, roast, and craft with the kind of care that turns an ordinary morning into something worth waking up for.
+            </p>
+            <div class="cta-group" data-aos="fade-up" data-aos-delay="400">
+                <button class="btn-primary">Explore Menu</button>
+                <button class="btn-secondary">Our story →</button>
+            </div>
+
+            <!-- Stats -->
+            <div class="detail-strip" data-aos="fade-up" data-aos-delay="500">
+                <div class="detail-item">
+                    <span class="num">35k+</span>
+                    <span class="label">Locations</span>
+                </div>
+                <div class="divider"></div>
+                <div class="detail-item">
+                    <span class="num">80+</span>
+                    <span class="label">Countries</span>
+                </div>
+                <div class="divider"></div>
+                <div class="detail-item">
+                    <span class="num">50yr</span>
+                    <span class="label">Heritage</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: drink stage -->
+        <div class="drink-stage">
+            <div class="portal" id="portal"></div>
+            <div class="box green"><img src="images/green.png" alt="Green drink"></div>
+            <div class="box orange"><img src="images/orange.png" alt="Orange drink"></div>
+            <div class="box pink"><img src="images/pink.png" alt="Pink drink"></div>
+        </div>
+
+    </main>
+
+    <!-- VARIANT SELECTOR -->
+    <div class="variant-selector">
+        <button class="variant-btn active gcfe" data-color="green" aria-label="Green drink">
+            <img src="images/green.png" alt="">
+            <span>Matcha</span>
+        </button>
+        <button class="variant-btn ocfe" data-color="orange" aria-label="Orange drink">
+            <img src="images/orange.png" alt="">
+            <span>Caramel</span>
+        </button>
+        <button class="variant-btn pcfe" data-color="pink" aria-label="Pink drink">
+            <img src="images/pink.png" alt="">
+            <span>Berry</span>
+        </button>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 900, delay: 80, once: true });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
