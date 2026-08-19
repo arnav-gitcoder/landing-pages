@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.piano {
+    position: relative;
+    display: flex;
+    height: 300px;
+}
+
+.key {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.white {
+    width: 80px;
+    height: 300px;
+    background: white;
+    border: 1px solid #222;
+    border-radius: 0 0 8px 8px;
+    color: #555;
+    z-index: 1;
+}
+
+.white:active,
+.white.active {
+    background: #ddd;
+    transform: translateY(4px);
+}
+
+.black {
+    position: absolute;
+    width: 50px;
+    height: 190px;
+    background: #111;
+    color: white;
+    border-radius: 0 0 6px 6px;
+    z-index: 2;
+    padding-bottom: 15px;
+}
+
+.black:active,
+.black.active {
+    background: #444;
+    transform: translateY(4px);
+}
+
+/* Position black keys */
+
+.black[data-key="w"] {
+    left: 55px;
+}
+
+.black[data-key="e"] {
+    left: 135px;
+}
+
+.black[data-key="t"] {
+    left: 295px;
+}
+
+.black[data-key="y"] {
+    left: 375px;
+}
+
+.black[data-key="u"] {
+    left: 455px;
+}
+
+@media (max-width: 700px) {
+    .piano {
+        transform: scale(0.75);
+    }
+}
